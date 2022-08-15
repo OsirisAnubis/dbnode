@@ -1,13 +1,8 @@
-CREATE TABLE person(
+CREATE TABLE books(
     id SERIAL PRIMARY KEY,
-    name VARCHAR(255),
-    surname VARCHAR(255)
-);
-
-CREATE TABLE POST(
-    id SERIAL PRIMARY KEY,
-    title VARCHAR(255),
-    content VARCHAR(255),
-    user_id INTEGER,
-    FOREIGN KEY (user_id) REFERENCES person (id)
+    title VARCHAR(100),
+    author VARCHAR(100),
+    releas_year INTEGER,
+    number_of_pages INTEGER,
+    circulation INTEGER
 );
